@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    
+*{
+    padding: 0;
+    margin: 0;
+    }
+    
+p, h1, h2 {
+    margin-bottom: 10px;
+    }
+    
+img {
+    max-width: 100%;
+    display: block;
+    }
+    
+.left {
+    float: left;
+    margin-right: 10px;
+    }
+    
+.right {
+    float: right;
+    margin-left: 10px;
+    }
+    
+header {
+    background-image: url("/images/sampleimage.jpg");
+    background-size: cover;
+    grid-area: head;
+    display: grid;
+    height: 100vh;
+    place-content: center;
+    }
+    
+nav {
+    grid-area: nav;
+    }
+    
+aside {
+    padding: 10px;
+    grid-area: side;
+    }
+    
+article {
+    padding: 10px;
+    grid-area: main;
+    }
+    
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    grid-area: foot;
+    }
+    
+nav a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    background-color: snow;
+    }
+    
+nav li {
+    list-style: none;
+    flex-basis: 100%;
+    }
+    
+nav a:hover {
+    background-color: lightblue;
+    color: #000;
+    }
+    
+.social a {
+    background-color: rgb(56, 122, 173);
+    color: snow;
+    }
+    
+.social {
+    flex-basis: 25%;
+    }
+    
+#toggleNav {
+    display: none;
+    }
+    
+.labelLook {
+    background-color: black;
+    display: block;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    }
+    
+nav ul {
+    display: none;
+    }
+    
+    
+#toggleNav:checked~ul {
+    display: flex;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    flex-wrap: wrap;
+    }
+    
+
+@media screen and (min-width: 90ch) {
+    header {
+        height: 40vh;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: minmax (50px, 10vw) 1fr 1 fr minmax(50px, 10vw);
+        grid-template-areas:
+        "head head head head"
+        "nav nav nav nav"
+        ". side main ."
+        ".foot foot .";
+    }
+    nav ul {
+        display: flex;
+        flex-wrap: nowrap;
+        position: static;
+    }
+    nav li {
+        flex: 3;
+    }
+    .social {
+        flex: 1;
+    }
+    .labelLook {
+        display: none;
+    }
+}
