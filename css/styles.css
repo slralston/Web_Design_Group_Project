@@ -3,11 +3,13 @@ body {
     }
     
 *{
-    padding: 0;
+    padding: 0px;
     margin: 0;
     }
+
+
     
-p, h1, h2 {
+p, h1, h3 {
     margin-bottom: 10px;
     }
     
@@ -27,7 +29,7 @@ img {
     }
     
 header {
-    background-image: url("/images/sampleimage.jpg");
+    background-image: url("/images/festivalplaceholder.jpg");
     background-size: cover;
     grid-area: head;
     display: grid;
@@ -63,6 +65,8 @@ nav a {
     padding: 10px;
     text-decoration: none;
     background-color: snow;
+    color: black;
+    
     }
     
 nav li {
@@ -71,7 +75,7 @@ nav li {
     }
     
 nav a:hover {
-    background-color: lightblue;
+    background-color: rgba(230, 223, 146, 0.96);
     color: #000;
     }
     
@@ -89,9 +93,9 @@ nav a:hover {
     }
     
 .labelLook {
-    background-color: black;
+    background-color: white;
     display: block;
-    color: white;
+    color: black;
     font-size: 2rem;
     padding: 10px;
     position: fixed;
