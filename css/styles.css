@@ -217,8 +217,10 @@ footer {
 @media screen and (min-width: 90ch) {
 
     nav ul {
-        align-items: flex-start;
+        display: flex;
         flex-wrap: nowrap;
+        position: static;
+
     }
 
     nav li {
@@ -233,7 +235,4 @@ footer {
         display: none;
     }
 
-    .logo {
-        order: 0;
-    }
 }
