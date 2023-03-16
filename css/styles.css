@@ -215,21 +215,10 @@ footer {
 }
 
 @media screen and (min-width: 90ch) {
-    .container {
-        display: grid;
-        grid-template-columns: minmax (50px, 10vw) 1fr 1 fr minmax(50px, 10vw);
-        grid-template-areas:
-            "nav nav"
-            "head head"
-            "side main"
-            "foot foot";
-    }
 
     nav ul {
-        display: flex;
+        align-items: flex-start;
         flex-wrap: nowrap;
-        position: static;
-
     }
 
     nav li {
@@ -242,5 +231,9 @@ footer {
 
     .labelLook {
         display: none;
+    }
+
+    .logo {
+        order: 0;
     }
 }
