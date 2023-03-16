@@ -216,6 +216,12 @@ footer {
 
 @media screen and (min-width: 90ch) {
 
+    .navContainer {
+        display: flex;
+        flex-wrap: nowrap;
+
+    }
+
     nav ul {
         display: flex;
         flex-wrap: nowrap;
@@ -224,7 +230,7 @@ footer {
     }
 
     nav li {
-        flex: 3;
+        flex: auto;
     }
 
     .social {
