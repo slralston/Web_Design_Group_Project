@@ -35,7 +35,6 @@ nav a {
     text-decoration: none;
     background-color: white;
     color: black;
-
 }
 
 nav a:hover {
@@ -50,6 +49,17 @@ nav ul {
 nav li {
     list-style: none;
     flex-basis: 100%;
+}
+
+.logo {
+    display: flex;
+    padding: 25px;
+    height: 10px;
+    margin-left: 15px;
+    background-image: url("/images/logo.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .labelLook {
@@ -71,6 +81,7 @@ nav li {
     display: flex;
     position: fixed;
     top: 59px;
+    left: 0px;
     width: 100%;
     flex-wrap: wrap;
 }
@@ -85,14 +96,6 @@ nav li {
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 999;
-}
-
-.logo {
-    width: 70px;
-    height: 70px;
-    display: flex;
-    align-items: center;
 }
 
 /*hero*/
@@ -105,6 +108,7 @@ header {
     display: grid;
     height: 100vh;
     place-content: center;
+    margin-bottom: 20px;
 }
 
 .headerTitle {
@@ -115,13 +119,52 @@ header {
 
 /*main content*/
 .aside {
-    padding: 10px;
-    grid-area: side;
+    padding: 1em;
 }
 
 .article {
-    padding: 10px;
-    grid-area: main;
+    padding: 1em;
+}
+
+.art1 {
+    grid-area: art1;
+}
+.as1 {
+    grid-area: as1;
+}
+.art2 {
+    grid-area: art2;
+}
+.as2 {
+    grid-area: as2;
+}
+.art3 {
+    grid-area: art3;
+}
+.as3 {
+    grid-area: as3;
+}
+.art4 {
+    grid-area: art4;
+}
+.as4 {
+    grid-area: as4;
+}
+.art5 {
+    grid-area: art5;
+}
+.as5 {
+    grid-area: as5;
+}
+
+.t1 {
+    grid-area: t1;
+}
+.t2 {
+    grid-area: t2;
+}
+.t3 {
+    grid-area: t3;
 }
 
 footer {
@@ -203,11 +246,12 @@ footer {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto; /* center the images horizontally */
+    margin: 0 auto;
 }
 
 .partners {
     margin: 40px;
+    grid-area: partners;
 }
 
 .partners h2 {
@@ -216,21 +260,60 @@ footer {
 
 @media screen and (min-width: 90ch) {
 
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "nav nav"
+            "head head"
+            "t1 t1"
+            "as1 art1"
+            "art2 as2"
+            "as3 art3"
+            "t2 t2"
+            "art4 as4"
+            "t3 t3"
+            "as5 art5"
+            "partners partners"
+            "foot foot";
+    }
+
     .navContainer {
         display: flex;
         flex-wrap: nowrap;
-
     }
 
     nav ul {
         display: flex;
         flex-wrap: nowrap;
         position: static;
-
     }
 
     nav li {
         flex: auto;
+    }
+
+    .logo {
+        display: flex;
+        height: 10px;
+        width: auto;
+        margin-left: 15px;
+        background-image: url("/images/logo.png");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .aside {
+        padding: 2em;
+    }
+    
+    .article {
+        padding: 2em;
+    }
+    
+    header {
+        margin-bottom: 1.5em;
     }
 
     .social {
@@ -239,6 +322,10 @@ footer {
 
     .labelLook {
         display: none;
+    }
+
+    .partnerImage {
+        max-width: 60%;
     }
 
 }
