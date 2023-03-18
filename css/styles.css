@@ -176,6 +176,7 @@ footer {
 }
 
 /*miscellaneous*/
+
 .title {
     text-align: center;
 }
@@ -258,6 +259,8 @@ footer {
     text-align: center;
 }
 
+
+
 @media screen and (min-width: 90ch) {
 
     .container {
@@ -306,6 +309,9 @@ footer {
 
     .aside {
         padding: 2em;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .article {
@@ -328,4 +334,17 @@ footer {
         max-width: 60%;
     }
 
+    .t1 {
+        visibility: hidden;
+        position: relative;
+    }
+    
+    .t1:after {
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        content: "Experience the Galway International Arts Festival";
+    }
 }
