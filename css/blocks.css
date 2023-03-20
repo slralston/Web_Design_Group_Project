@@ -19,19 +19,17 @@ h2,
 h3 {
     margin-bottom: 10px;
 }
+
 h1 {
-    font-size: 48px;
+    letter-spacing: 0.5ch;
 }
+
 h2 {
-    font-size: 28px;
 
 }
-h3 {
-    font-size: 24px;
 
-}
 img {
-    max-width: 100%;
+    max-width: 90%;
     display: block;
 }
 
@@ -130,54 +128,6 @@ header {
 }
 
 /*main content*/
-.aside {
-    padding: 1em;
-}
-
-.article {
-    padding: 1em;
-}
-
-.art1 {
-    grid-area: art1;
-}
-.as1 {
-    grid-area: as1;
-}
-.art2 {
-    grid-area: art2;
-}
-.as2 {
-    grid-area: as2;
-}
-.art3 {
-    grid-area: art3;
-}
-.as3 {
-    grid-area: as3;
-}
-.art4 {
-    grid-area: art4;
-}
-.as4 {
-    grid-area: as4;
-}
-.art5 {
-    grid-area: art5;
-}
-.as5 {
-    grid-area: as5;
-}
-
-.t1 {
-    grid-area: t1;
-}
-.t2 {
-    grid-area: t2;
-}
-.t3 {
-    grid-area: t3;
-}
 
 footer {
     background-color: lightgray;
@@ -187,6 +137,40 @@ footer {
     grid-area: foot;
 }
 
+.card {
+    place-items: center;
+    text-align: center;
+    border: solid 1px;
+    margin: 20px;
+}
+
+.card img {
+    display: inline-block;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardContainer {
+    display: block;
+    margin: 10px;
+    grid-area: c;
+}
+
+.cardText {
+    padding: 10px;
+}
+
+.c1 {
+    grid-area: c1;
+}
+.c2 {
+    grid-area: c2;
+}
+.c3 {
+    grid-area: c3;
+}
 /*miscellaneous*/
 
 .title {
@@ -219,16 +203,12 @@ footer {
     color: black;
     border: none;
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 16px;
     display: block;
     margin: 0 auto;
     cursor: pointer;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.heroButton {
-    margin-top: 10%;
 }
 
 .social{
@@ -243,46 +223,26 @@ footer {
     font-size: 20px;
 }
 
-.pFooter {
-    margin-bottom: 0px;
-}
-
-label {
-    display: block;
-    font-size: 1.2em;
-    margin-top: .5em;
-    margin-bottom: .1em;
-}
-.contact {
-    text-align: center;
-    grid-area: contact;
-    margin-bottom: 8vh;
-    margin-top: 2vh;
-}
-
-input, textarea {
-    width: 80%;
-    padding: .8em;
-    margin-bottom: 1em;
-    border-radius: .3em;
-    border: 1px solid grey;
-}
 
 @media screen and (min-width: 90ch) {
 
     .container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
-            "nav nav"
-            "head head"
-            "t1 t1"
-            "as1 art1"
-            "art2 as2"
-            "as3 art3"
-            "contact contact"
-            "foot foot";
+            "nav nav nav"
+            "head head head"
+            "c c c"
+            "foot foot foot";
     }
+
+    .cardContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "c1 c2 c3"
+    }
+
 
     body {
         font-size: 18px;
@@ -313,31 +273,6 @@ input, textarea {
         background-size:contain;
         background-repeat: no-repeat;
         background-position: center;
-    }
-
-    .aside {
-        padding: 2em;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .article {
-        padding: 2em;
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .art4, .art5 {
-        padding: 5em;
-    }
-
-    .contactForm{
-        max-width: 100ch;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     header {
