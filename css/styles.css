@@ -294,6 +294,7 @@ footer {
     .navContainer {
         display: flex;
         flex-wrap: nowrap;
+        z-index: 999;
     }
 
     nav ul {
@@ -364,5 +365,6 @@ footer {
         left: 0;
         right: 0;
         content: "Experience the Galway International Arts Festival";
+        z-index: 1;
     }
 }
