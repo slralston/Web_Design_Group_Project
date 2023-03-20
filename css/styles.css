@@ -9,6 +9,8 @@
 
 body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+
 }
 
 p,
@@ -16,6 +18,10 @@ h1,
 h2,
 h3 {
     margin-bottom: 10px;
+}
+
+h1 {
+    letter-spacing: 0.5ch;
 }
 
 img {
@@ -281,6 +287,10 @@ footer {
             "foot foot";
     }
 
+    body {
+        font-size: 18px;
+    }
+
     .navContainer {
         display: flex;
         flex-wrap: nowrap;
@@ -315,9 +325,17 @@ footer {
     }
     
     .article {
-        padding: 2em;
+        padding: 4em;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
+    .art4, .art5 {
+        padding: 5em;
+    }
+
     header {
         margin-bottom: 1.5em;
     }
