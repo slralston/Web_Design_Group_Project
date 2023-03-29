@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/b0c65c21f5.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="images/logo2.png" />
+    <title>Food</title>
+    <style>
+        h1 {
+            font-size: 48px;
+            letter-spacing: 0ch;
+        }
+
+        /*hero*/
+        header {
+            background-image: url("/images/plan/plan6-min.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            grid-area: head;
+            display: grid;
+            height: 60vh;
+            place-content: center;
+            margin-bottom: 20px;
+        }
+
+        .title1 {
+    grid-area: t1;
+}
+
+        @media screen and (min-width: 90ch) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                    "nav nav"
+                    "head head"
+                    "t1 t1"
+                    "as1 art1"
+                    "art2 as2"
+                    "as3 art3"
+                    "contact contact"
+                    "foot foot";
+            }
+
+            .article {
+                padding: 2em;
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            h1 {
+    letter-spacing: 0.5ch;
+}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="navContainer">
+            <a href="index.html" class="logo"></a>
+            <nav>
+                <input type="checkbox" id="toggleNav">
+                <label for="toggleNav" class="labelLook">&#9776</label>
+                <ul class="navOptions">
+                    <li class="navLinks"><a href="index.html">Home</a></li>
+                    <li class="navLinks"><a href="">2023 Festival</a></li>
+                    <li class="navLinks"><a href="volunteer.html">Volunteer</a></li>
+                    <li class="navLinks"><a href="plan.html">Plan</a></li>
+                    <li class="navLinks"><a href="">About us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <header>
+            <h1 class="headerTitle">Food</h1>
+        </header>
+
+        <h2 class="title title1">Delicious Meals on a Budget</h2>
+
+        <div class="aside as1">
+            <img src="images/food/Burgerstory.jpg" alt="" class="bodyImage">
+        </div>
+        <div class="article art1">
+            <h3 class="bodyText yellowUnderline">Burgerstory</h3>
+            <p class="bodyText">Burgerstory offers something for everyone, including delicious US-style burgers, 
+                chilli, wings and fries freshly prepared with the best of Irish ingredients.</p>
+        </div>
+        <div class="aside as2">
+            <img src="images/food/McDonaghs.jpg" alt="" class="bodyImage">
+        </div>
+        <div class="article art2">
+            <h3 class="bodyText yellowUnderline">McDonagh's</h3>
+            <p class="bodyText">McDonagh's Fish and Chips Bar and Seafood Restaurant has been serving the best seafood for over 115 years.
+                 Enjoy mussels, scallops, salmon, or classic fish and chips either inside or outside!
+            </p>
+        </div>
+        <div class="aside as3">
+            <img src="images/food/xian_street.jpg" alt="" class="bodyImage">
+        </div>
+        <div class="article art3">
+            <h3 class="bodyText yellowUnderline">Xi'an Street Food</h3>
+            <p class="bodyText">Xi'an Street Food is an authentic Chinese restaurant located on Quay Street.
+                 Experience traditional hand-pulled noodles or try a Roujiamo, possibly the world's oldest sandwich!</p>
+        </div>
+        <footer>
+            <a href=""><i class="fab fa-facebook social"></i></a>
+            <a href=""><i class="fab fa-linkedin social"></i></a>
+            <a href=""><i class="fab fa-youtube social"></i></a>
+            <a href=""><i class="fab fa-twitter social"></i></a>
+            <p class="pFooter"><i class="fa-solid fa-envelope icon"></i> Email: <u>info@giaf.ie</u></p>
+            <p class="pFooter"><i class="fa-solid fa-phone icon"></i> Telephone: +353 91 509 700</p>
+            <p class="pFooter"><i class="fa-sharp fa-solid fa-location-dot icon"></i> Address: Galway International Arts
+                Festival Administration Office, Black Box Theatre, Dyke Road, Galway, Ireland</p>
+        </footer>
+    </div>
+</body>
+
+</html>
