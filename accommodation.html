@@ -12,11 +12,12 @@
     <style>
         h1 {
             font-size: 48px;
+            letter-spacing: 0ch;
         }
 
         /*hero*/
         header {
-            background-image: url("/images/index/homepage.jpg");
+            background-image: url("/images/plan/plan-accommodation2.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -25,7 +26,12 @@
             height: 60vh;
             place-content: center;
             margin-bottom: 20px;
+            color: white;
         }
+
+        .title1 {
+    grid-area: t1;
+}
 
         @media screen and (min-width: 90ch) {
             .container {
@@ -49,6 +55,10 @@
                 justify-content: center;
                 align-items: center;
             }
+
+            h1 {
+    letter-spacing: 0.5ch;
+}
         }
     </style>
 </head>
@@ -75,7 +85,7 @@
             <h1 class="headerTitle">Accommodations</h1>
         </header>
 
-        <h2 class="title t1">Experience the GIAF</h2>
+        <h2 class="title title1">Stay in the Heart of the City</h2>
 
         <div class="aside as1">
             <img src="images/accommodation/galway_city_hostel.jpg" alt="" class="bodyImage">
