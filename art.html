@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/b0c65c21f5.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="images/logo2.png" />
+    <title>Art</title>
+    <style>
+        h1 {
+            font-size: 48px;
+        }
+
+        /*hero*/
+        header {
+            background-image: url("/images/art/art_cover.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            grid-area: head;
+            display: grid;
+            height: 60vh;
+            place-content: center;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .title1 {
+            grid-area: t1;
+        }
+
+        .as4 {
+            grid-area: as4;
+        }
+
+        .art4 {
+            grid-area: art4;
+        }
+
+        .as5 {
+            grid-area: as5;
+        }
+
+        .art5 {
+            grid-area: art5;
+        }
+
+        @media screen and (min-width: 90ch) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                    "nav nav"
+                    "head head"
+                    "t1 t1"
+                    "as1 art1"
+                    "art2 as2"
+                    "as3 art3"
+                    "art4 as4"
+                    "as5 art5"
+                    "foot foot";
+            }
+
+            .article {
+                padding: 2em;
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="navContainer">
+            <a href="index.html" class="logo"></a>
+            <nav>
+                <input type="checkbox" id="toggleNav">
+                <label for="toggleNav" class="labelLook">&#9776</label>
+                <ul class="navOptions">
+                    <li class="navLinks"><a href="index.html">Home</a></li>
+                    <li class="navLinks"><a href="2023_festival.html">2023 Festival</a></li>
+                    <li class="navLinks"><a href="volunteer.html">Volunteer</a></li>
+                    <li class="navLinks"><a href="plan.html">Plan</a></li>
+                    <li class="navLinks"><a href="">About us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <header>
+            <h1 class="headerTitle">Art</h1>
+        </header>
+
+        <h2 class="title title1">Art Shows and Exhibitions</h2>
+
+        <div class="aside as1">
+            <img src="images/art/art1.jpg" alt="" class="bodyImage">
+        </div>
+        <div class="article art1">
+            <h3 class="bodyText yellowUnderline">Live Screening: 2023 GAA All-Ireland Senior Football Championship Final
+            </h3>
+            <p class="bodyText">
+
+                Galway International Arts Festival is delighted to join together with Galway City Council to screen the
+                All-Ireland Senior Football Championship Final 2022, between Galway and Kerry, on Sunday the 24th of
+                July, in the Heineken® Big Top.
+                <br>Gates open at 2pm. Throw in at 3.30pm.<br>
+                A free ticket is required for entry. Ticket limit of 2 per person. Under 16s must be accompanied by a
+                person over 18.
+                As tickets are limited please inform boxoffice@giaf.ie if you order tickets and no longer require them.
+            </p>
+        </div>
+        <div class="aside as2">
+            <img src="images/art/art2.jpg" alt="" class="bodyImage">
+        </div>
+        <div class="article art2">
+            <h3 class="bodyText yellowUnderline">Mars</h3>
+            <p class="bodyText">
+                Mars is the latest artwork by UK artist Luke Jerram.
+                <br>
+                Location: Nun's Island Distillery, H91 YA48
+                <br>
+                Runs Daily: Noon to 8pm
+                <br>
+                Measuring seven metres in diameter, the artwork features 120dpi detailed NASA imagery of the Martian
+                surface. At an approximate scale of 1:1million, each centimetre of the internally lit spherical
+                sculpture represents 10 kilometres of the surface of Mars.
+
+                The artwork allows us to view Mars from the air, as though we are a satellite mapping and studying the
+                surface in perfect detail. Every valley, crater, volcano and mountain are laid bare for us to inspect.
+                The artwork transports us to this desert wasteland, to imagine what it’s like to set foot on this
+                incredible planet.
+            </p>
+        </div>
+        <div class="aside as3">
+            <img src="images/art/art3.jpg" alt="" class="bodyImage">
+        </div>
+        <div class="article art3">
+            <h3 class="bodyText yellowUnderline">Les Girafes</h3>
+            <p class="bodyText">
+                A herd of monumental and curious red giraffes will move nonchalantly through the streets of Galway led
+                by an operatic Diva! The giraffes adore her!
+                Compagnie Off is one of the most illustrious street theatre companies in Europe combining circus,
+                spectacle, opera, live performance and monumental staging.
+                These spectacular animals, who will enthral audiences of all ages, are joined by a troupe of circus ring
+                masters adding to the excitement and energy of this magical street parade.
+                Spectacle and chaos await in equal measure as this show transports you to the fantastic world of
+                Compagnie Off.
+                The Parade will travel from Eyre Square to Spanish Arch.</p>
+        </div>
+        <div class="aside as4">
+            <img src="images/art/art4.jpg" alt="" class="bodyImage">
+        </div>
+        <div class="article art4">
+            <h3 class="bodyText yellowUnderline">A Handful of Dreams</h3>
+            <p class="bodyText">
+                Walk up places available, no pre-booking required.<br>
+
+                This explosion of music, dance, and aerial acrobatics, features an electric ensemble of five spectacular
+                aerial dancers and two live musicians, with a gloriously joyful soundscape.
+
+                An awe–inspiring and heartwarming outdoor show, A Handful of Dreams combines aerial and circus arts with
+                live Irish traditional music and dance. With a specially designed outdoor rig, this beautiful
+                celebration will bring joy to the hearts of each audience member.</p>
+        </div>
+        <div class="aside as5">
+            <img src="images/art/art5.jpg" alt="" class="bodyImage">
+        </div>
+        <div class="article art5">
+            <h3 class="bodyText yellowUnderline">Miracoco Luminarium</h3>
+            <p class="bodyText">
+
+                A luminarium is a sculpture people can enter to be moved to a sense of wonder at the beauty of light and
+                colour.
+
+                From the Guggenheim in Spain to the Sydney Opera House in Australia, the monumental and interactive
+                walk–in sculptures of Architects of Air, designed by Alan Parkinson, have astounded audiences across the
+                globe.
+
+                The luminarium offers a dazzling maze of winding paths, soaring domes and scintillating light, creating
+                a sense of wonder and enchantment for all ages. Enter and be amazed.
+            </p>
+        </div>
+        <footer>
+            <a href=""><i class="fab fa-facebook social"></i></a>
+            <a href=""><i class="fab fa-linkedin social"></i></a>
+            <a href=""><i class="fab fa-youtube social"></i></a>
+            <a href=""><i class="fab fa-twitter social"></i></a>
+            <p class="pFooter"><i class="fa-solid fa-envelope icon"></i> Email: <u>info@giaf.ie</u></p>
+            <p class="pFooter"><i class="fa-solid fa-phone icon"></i> Telephone: +353 91 509 700</p>
+            <p class="pFooter"><i class="fa-sharp fa-solid fa-location-dot icon"></i> Address: Galway International Arts
+                Festival Administration Office, Black Box Theatre, Dyke Road, Galway, Ireland</p>
+        </footer>
+    </div>
+</body>
+
+</html>
