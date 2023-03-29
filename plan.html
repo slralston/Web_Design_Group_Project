@@ -5,9 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/blocks.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/b0c65c21f5.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/png" href="images/logo2.png"/>
+    <link rel="icon" type="image/png" href="images/logo2.png" />
+    <style>
+        img {
+            max-width: 90%;
+            display: block;
+        }
+
+        /*hero*/
+        header {
+            background-image: url("/images/index/homepage.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            grid-area: head;
+            display: grid;
+            height: 60vh;
+            place-content: center;
+            margin-bottom: 20px;
+        }
+
+
+        .yellowButton {
+            background-color: var(--main-color);
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (min-width: 90ch) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas:
+                    "nav nav nav"
+                    "head head head"
+                    "c c c"
+                    "foot foot foot";
+            }
+        }
+    </style>
     <title>Plan</title>
 </head>
 
@@ -41,7 +86,7 @@
                     <button class="yellowButton" onclick="location.href='index.html'">Plan your stay</button>
                 </div>
             </div>
-            
+
             <div class="card c2">
                 <img src="/images/festivalplaceholder.jpg" alt="">
                 <div class="cardText">
@@ -50,7 +95,7 @@
                     <button class="yellowButton" onclick="location.href='index.html'">Plan your stay</button>
                 </div>
             </div>
-    
+
             <div class="card c3">
                 <img src="/images/festivalplaceholder.jpg" alt="">
                 <div class="cardText">
@@ -58,7 +103,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur.</p>
                     <button class="yellowButton" onclick="location.href='index.html'">Plan your stay</button>
                 </div>
-            </div>    
+            </div>
         </div>
 
         <footer>

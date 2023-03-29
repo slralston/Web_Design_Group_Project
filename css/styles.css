@@ -19,8 +19,10 @@ h2,
 h3 {
     margin-bottom: 10px;
 }
+
 h1 {
-    font-size: 48px;
+    letter-spacing: 0.5ch;
+    font-size: 40px;
 }
 h2 {
     font-size: 28px;
@@ -30,6 +32,7 @@ h3 {
     font-size: 24px;
 
 }
+
 img {
     max-width: 100%;
     display: block;
@@ -83,6 +86,7 @@ nav li {
     position: fixed;
     top: 0px;
     right: 0px;
+    margin: 0px;
 }
 
 #toggleNav {
@@ -112,13 +116,13 @@ nav li {
 
 /*hero*/
 header {
-    background-image: url("/images/festivalplaceholder.jpg");
+    background-image: url("/images/index/homepage.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     grid-area: head;
     display: grid;
-    height: 60vh;
+    height: 100vh;
     place-content: center;
     margin-bottom: 20px;
 }
@@ -247,12 +251,38 @@ footer {
     margin-bottom: 0px;
 }
 
+.partnerGrid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 25px;
+    row-gap: 20px;
+    column-gap: 30px;
+}
+
+.partnerImage {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.partners {
+    margin: 40px;
+    grid-area: partners;
+}
+
+.partners h2 {
+    text-align: center;
+}
+
+
 label {
     display: block;
     font-size: 1.2em;
     margin-top: .5em;
     margin-bottom: .1em;
 }
+
 .contact {
     text-align: center;
     grid-area: contact;
@@ -260,12 +290,45 @@ label {
     margin-top: 2vh;
 }
 
-input, textarea {
+input,
+textarea {
     width: 80%;
     padding: .8em;
     margin-bottom: 1em;
     border-radius: .3em;
     border: 1px solid grey;
+}
+
+	
+.card {
+    place-items: center;
+    text-align: center;
+    border: solid 1px;
+    margin: 20px;
+}
+.card img {
+    display: inline-block;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+}
+.cardContainer {
+    display: block;
+    margin: 10px;
+    grid-area: c;
+}
+.cardText {
+    padding: 10px;
+}
+.c1 {
+    grid-area: c1;
+}
+.c2 {
+    grid-area: c2;
+}
+.c3 {
+    grid-area: c3;
 }
 
 @media screen and (min-width: 90ch) {
@@ -280,7 +343,11 @@ input, textarea {
             "as1 art1"
             "art2 as2"
             "as3 art3"
-            "contact contact"
+            "t2 t2"
+            "art4 as4"
+            "t3 t3"
+            "as5 art5"
+            "partners partners"
             "foot foot";
     }
 
@@ -323,21 +390,15 @@ input, textarea {
     }
     
     .article {
-        padding: 2em;
+        padding: 4em;
         display: inline-flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    
+
     .art4, .art5 {
         padding: 5em;
-    }
-
-    .contactForm{
-        max-width: 100ch;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     header {
@@ -350,6 +411,10 @@ input, textarea {
 
     .labelLook {
         display: none;
+    }
+
+    .partnerImage {
+        max-width: 60%;
     }
 
     .t1 {
@@ -365,5 +430,18 @@ input, textarea {
         right: 0;
         content: "Experience the Galway International Arts Festival";
         z-index: 1;
+    }
+
+    .contactForm {
+        max-width: 100ch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cardContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "c1 c2 c3"
     }
 }

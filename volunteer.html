@@ -7,8 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/b0c65c21f5.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/png" href="images/logo2.png"/>
+    <link rel="icon" type="image/png" href="images/logo2.png" />
     <title>Volunteer</title>
+    <style>
+        h1 {
+            font-size: 48px;
+        }
+
+        /*hero*/
+        header {
+            background-image: url("/images/index/homepage.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            grid-area: head;
+            display: grid;
+            height: 60vh;
+            place-content: center;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (min-width: 90ch) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                    "nav nav"
+                    "head head"
+                    "t1 t1"
+                    "as1 art1"
+                    "art2 as2"
+                    "as3 art3"
+                    "contact contact"
+                    "foot foot";
+            }
+
+            .article {
+                padding: 2em;
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -84,7 +126,7 @@
                 <label for="email">Email</label>
                 <input type="text" id="email" name="email" placeholder="example@email.com">
 
-                <label for="message" >Message</label>
+                <label for="message">Message</label>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message..."></textarea>
 
                 <input type="submit" class="yellowButton" value="Send message">
