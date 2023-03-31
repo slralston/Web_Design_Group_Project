@@ -71,7 +71,7 @@ nav li {
     padding: 25px;
     height: 10px;
     margin-left: 15px;
-    background-image: url("/images/logo.png");
+    background-image: url("/images/new_logo/new_logo1.png");
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -376,7 +376,6 @@ textarea {
         height: 10px;
         width: auto;
         margin-left: 15px;
-        background-image: url("/images/logo.png");
         background-size:contain;
         background-repeat: no-repeat;
         background-position: center;
